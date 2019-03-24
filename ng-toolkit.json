@@ -1,0 +1,18 @@
+{
+  "universal": {
+    "skipInstall": false,
+    "directory": ".",
+    "http": true,
+    "project": "Proj1"
+  },
+  "serverless": {
+    "provider": "aws",
+    "skipInstall": false,
+    "directory": ".",
+    "project": "Proj1",
+    "serverless": {
+      "aws": {},
+      "gcloud": {}
+    }
+  }
+}
