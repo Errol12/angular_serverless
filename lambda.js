@@ -49,10 +49,7 @@ function doC(){
 
 function calc(data_array,number){
   var counts = {}; //We are going to count occurrence of item here
-  var compare = 0;  //We are going to compare using stored value
-  var mostFrequent = 0;  //We are going to store most frequent item
-      //caching length in len variable
-      //console.log('print',data_array[1]);
+  
   for(var i = 0, len = data_array.length; i < len; i++)
   {   
       if(data_array[i] != '' )
@@ -64,43 +61,33 @@ function calc(data_array,number){
           counts[word] = counts[word] + 1; //increment existing value
           }
       }
-      
-      
   }
 
-
-  //console.log('here it is');
-  //console.log(getSortedKeys(counts));
   var sortedArray = getSortedKeys(counts);
-  //console.log(sortedArray.slice(0,number));
   
   return sortedArray.slice(0,number);
-  
-  
-  
 }
 
 function getSortedKeys(obj) {
   var keys = []; 
   var i=0;
   for(var key in obj) {
-      //keys.push(key);
+     
       keys.push({name:key,val:obj[key]});
   }
-  //return keys;
+  
   return keys.sort(function(a,b) {
       return b.val - a.val;
   });
-  //return keys.sort(function(a,b){return obj[b].value - obj[a].value});
+  
 }
 
 module.exports.process = (event,context,callback) => {
-  var request = require('request');
-  var fileUrl = "https://terriblytinytales.com/test.txt";
+  
   doC()
     .then(data => {
           const processeddata = data.replace(/\r?\n|\r|[{()}]|\?|\,/g, " ").split(" ");
-          //console.log(myObj['data2']);
+          
           var number = event.pathParameters.count;
           const endresult = calc(processeddata,number);
           const response = { 
@@ -108,7 +95,7 @@ module.exports.process = (event,context,callback) => {
                       body: JSON.stringify(endresult) 
                       };
             callback(null, response);
-          //console.log(calc(myObj['data2'],number));
+         
   }).catch(callback);
 
   

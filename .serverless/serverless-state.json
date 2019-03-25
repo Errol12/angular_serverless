@@ -120,7 +120,7 @@
                 "S3Bucket": {
                   "Ref": "ServerlessDeploymentBucket"
                 },
-                "S3Key": "serverless/proj1-ttyl/production/1553427761922-2019-03-24T11:42:41.922Z/proj1-ttyl.zip"
+                "S3Key": "serverless/proj1-ttyl/production/1553494706246-2019-03-25T06:18:26.246Z/proj1-ttyl.zip"
               },
               "FunctionName": "proj1-ttyl-production-hello",
               "Handler": "lambda.process",
@@ -139,14 +139,14 @@
               "IamRoleLambdaExecution"
             ]
           },
-          "HelloLambdaVersionS7wti9FBcBmv4Gqf8THd8nctHkYg9sgKnvejSprOc": {
+          "HelloLambdaVersionnT53hetWQcNuy6cdHrsOsg2GFX4QyjufuFe0M9TDvE": {
             "Type": "AWS::Lambda::Version",
             "DeletionPolicy": "Retain",
             "Properties": {
               "FunctionName": {
                 "Ref": "HelloLambdaFunction"
               },
-              "CodeSha256": "8HtgUGzoJfCEJmgswPXgtGkfnre0B6E2RosDzC6Jwx0="
+              "CodeSha256": "6Au+NblAs1idmbeY27jJE9+w6NT4gflurVJIGdHE4yU="
             }
           },
           "ApiLambdaFunction": {
@@ -156,7 +156,7 @@
                 "S3Bucket": {
                   "Ref": "ServerlessDeploymentBucket"
                 },
-                "S3Key": "serverless/proj1-ttyl/production/1553427761922-2019-03-24T11:42:41.922Z/proj1-ttyl.zip"
+                "S3Key": "serverless/proj1-ttyl/production/1553494706246-2019-03-25T06:18:26.246Z/proj1-ttyl.zip"
               },
               "FunctionName": "proj1-ttyl-production-api",
               "Handler": "lambda.universal",
@@ -175,14 +175,14 @@
               "IamRoleLambdaExecution"
             ]
           },
-          "ApiLambdaVersionjWPuOgXpzcJwuvp0GDkcmB2p0gi2OQ0YyU7Mbqc": {
+          "ApiLambdaVersionkitXCcOS2hdWgLkeBoTmIl6o8pjUnI0qg0FmYxgzM": {
             "Type": "AWS::Lambda::Version",
             "DeletionPolicy": "Retain",
             "Properties": {
               "FunctionName": {
                 "Ref": "ApiLambdaFunction"
               },
-              "CodeSha256": "8HtgUGzoJfCEJmgswPXgtGkfnre0B6E2RosDzC6Jwx0="
+              "CodeSha256": "6Au+NblAs1idmbeY27jJE9+w6NT4gflurVJIGdHE4yU="
             }
           },
           "ApiGatewayRestApi": {
@@ -358,7 +358,7 @@
               "MethodResponses": []
             }
           },
-          "ApiGatewayDeployment1553427762011": {
+          "ApiGatewayDeployment1553494706281": {
             "Type": "AWS::ApiGateway::Deployment",
             "Properties": {
               "RestApiId": {
@@ -448,13 +448,13 @@
           "HelloLambdaFunctionQualifiedArn": {
             "Description": "Current Lambda function version",
             "Value": {
-              "Ref": "HelloLambdaVersionS7wti9FBcBmv4Gqf8THd8nctHkYg9sgKnvejSprOc"
+              "Ref": "HelloLambdaVersionnT53hetWQcNuy6cdHrsOsg2GFX4QyjufuFe0M9TDvE"
             }
           },
           "ApiLambdaFunctionQualifiedArn": {
             "Description": "Current Lambda function version",
             "Value": {
-              "Ref": "ApiLambdaVersionjWPuOgXpzcJwuvp0GDkcmB2p0gi2OQ0YyU7Mbqc"
+              "Ref": "ApiLambdaVersionkitXCcOS2hdWgLkeBoTmIl6o8pjUnI0qg0FmYxgzM"
             }
           },
           "ServiceEndpoint": {
@@ -533,10 +533,10 @@
         "vpc": {}
       }
     },
-    "artifact": "C:\\Users\\ERROL\\Desktop\\blog\\personal projects\\work ttl\\Proj1\\.serverless\\proj1-ttyl.zip"
+    "artifact": "C:\\Users\\A637961\\Desktop\\blog\\work\\work ttl\\Proj1\\.serverless\\proj1-ttyl.zip"
   },
   "package": {
-    "artifactDirectoryName": "serverless/proj1-ttyl/production/1553427761922-2019-03-24T11:42:41.922Z",
+    "artifactDirectoryName": "serverless/proj1-ttyl/production/1553494706246-2019-03-25T06:18:26.246Z",
     "artifact": "proj1-ttyl.zip"
   }
 }
